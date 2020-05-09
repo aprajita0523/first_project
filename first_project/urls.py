@@ -21,6 +21,7 @@ from django.conf.urls import include
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'^help/',include('first_app.urls')),
+    url(r'^help/',views.help,name='help'),
+    #url(r'^help/',include('first_app.urls')),
     url(r'^admin/', admin.site.urls),
     ]
